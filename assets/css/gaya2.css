@@ -1,0 +1,262 @@
+body {
+	background-color: #ec473d;
+	overflow-x: hidden;
+}
+
+.header-content {
+	padding-top: 7%;
+	padding-bottom: 2%;
+	margin-left: 50px;
+}
+
+.header-content-logo {
+	padding-left: 50px;
+}
+
+.menu {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: grey;
+}
+
+.menu-co {
+	margin: 0 10% 0 22%;
+}
+
+.menu-content {
+	margin: 0 10% 0 10%;
+	color: black;
+}
+
+.icon-user {
+	width: 3.5%;
+	height: 40px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	border-radius: 25px;
+	padding-top: 3px;
+	padding-left: 20px;
+}
+
+.icon-user:hover {
+	background-color: white;
+}
+
+.icon-user img {
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-right: 5px;
+	margin-top: 0;
+	
+}
+
+.feed {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	margin-top: 5px;
+	margin-right: 1px;
+	margin-left: 1px;
+	padding: 5px 5px 5px 5px;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+/*.contoh1 {
+	background-color: black;
+	width: 100px;
+	height: 100px;
+	margin-right: 5px;
+}*/
+
+/* The heart of the matter */
+.testimonial-group > .row {
+  overflow-x: hidden;
+  white-space: nowrap;
+  margin-bottom: 1%;
+}
+.testimonial-group > .row > .contoh1 {
+  display: inline-block;
+  float: none;
+}
+/*
+.carousel-cell {
+	width: 50%;
+	height: 10rem;
+}
+*/
+.carousel-cell {
+	width: 66%;
+	  height: 200px;
+	  margin-right: 10px;
+	  background: #8C8;
+	  border-radius: 5px;
+	  counter-increment: gallery-cell;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.feed-content {
+	padding: 5px 5px 5px 5px;
+	width: 100%;
+	overflow: hidden; 
+	background: white;
+	border-radius: 2px;
+	display: block;
+}
+
+/*.feed-content {
+	width: 15rem;
+	overflow: hidden;
+
+}*/
+
+/* Decorations */
+.contoh1 { 
+	color: #fff; 
+	padding-bottom: 20px; 
+	padding-top: 18px; 
+	width: 900px; 
+	text-overflow: inherit; 
+	border: 1px white solid;
+}
+
+.contoh1:nth-child(3n+1) { background: #c69; }
+.contoh1:nth-child(3n+2) { background: #9c6; }
+.contoh1:nth-child(3n+3) { background: #69c; }
+
+.text-status-h {
+	color: red;
+	font-style: italic;
+	margin-bottom: 1px;
+}
+
+.text-status-d {
+	color: green;
+	font-style: italic;
+	margin-bottom: 1px;
+}
+
+.isi {
+	background-color: #fdffc1;
+	margin-top: 1%;
+}
+
+.isi > .detail {
+	padding: 4% 3% 4% 3%;
+}
+
+.detail-img {
+	width: 500px;
+	height: 500px;
+	border: 2px red solid;
+	display : flex;
+  	align-items : center;
+}
+
+.detail-img img {
+	height: auto;
+	width: 100%;
+}
+
+/*.isi > .row {
+	padding: 0 0 0 0;
+}*/
+
+.isi > .fitur-home {
+	padding: 5% 5% 5% 9%;
+}
+
+.fitur-content {
+	margin: 0% 3% 0% 3%;
+	border: 1px red solid;
+	background-color: yellow;
+	padding: 3% 2% 3% 2%;
+}
+
+.isi > .tentang {
+	padding: 5% 5% 5% 5%;	
+}
+
+.tentang-title {
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+
+
+.gambar img {
+	width: 150px;
+	height: 150px;
+/*	border: 5px black solid;*/
+	/*margin: 20% 20% 20% 50%;*/
+}
+
+.fitur {
+	margin: 8% 5% 5% 6%;
+}
+
+.kolom-cari {
+	padding: 2% 2% 2% 2%;
+}
+
+.kolom-lapor {
+	padding: 2% 2% 2% 60%;
+
+}
+
+.list-data {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.list-data-content {
+	-webkit-flex-wrap: wrap;
+  	flex-wrap: wrap;
+  	margin: 1% 1% 1% 1%;
+}
+
+.form-laporan {
+	/*border: 1px red solid;*/
+	margin: 5% 0 5% 0;
+	padding: 0 3% 3% 3%;
+	background-color: yellow;
+}
+
+.form-header {
+	text-transform: uppercase;
+	margin: 10% 0 10% 0;
+}
+
+.footer {
+	background-color: #000;
+	width: 100%;
+	height: 100px;
+	margin-left: 0;
+	margin-top: 1%;
+	margin-bottom: 0;
+}
+
+.container-fluid {
+	padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.footer-content {
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	padding-top: 2%;
+}
