@@ -1,8 +1,11 @@
 body {
-	background-color: #ec473d;
+	/*background-color: #ed4845;*/
+	/*background-color: #f85a3e;*/
+	background-color: #f9f8f8;
 	overflow-x: hidden;
 }
-
+ 
+/* --------- HOMEPAGE --------- */
 .header-content {
 	padding-top: 7%;
 	padding-bottom: 2%;
@@ -17,7 +20,10 @@ body {
 	position: fixed;
 	width: 100%;
 	z-index: 2;
-	background-color: grey;
+	/*background-color: #292f36;*/
+	/*background-color: #f4ac45;*/
+	/*background-color: #584b53;*/
+	background-color: #f85a3e;
 }
 
 .menu-co {
@@ -26,7 +32,18 @@ body {
 
 .menu-content {
 	margin: 0 10% 0 10%;
+}
+
+.menu .menu-co .menu-content a {
+	color: white;
+}
+
+/*.menu-content-f {
 	color: black;
+}*/
+
+.nav-item > a {
+	color: white;
 }
 
 .icon-user {
@@ -82,29 +99,6 @@ body {
   display: inline-block;
   float: none;
 }
-/*
-.carousel-cell {
-	width: 50%;
-	height: 10rem;
-}
-*/
-.carousel-cell {
-	width: 66%;
-	  height: 200px;
-	  margin-right: 10px;
-	  background: #8C8;
-	  border-radius: 5px;
-	  counter-increment: gallery-cell;
-}
-
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
 
 .feed-content {
 	padding: 5px 5px 5px 5px;
@@ -148,9 +142,45 @@ body {
 }
 
 .isi {
-	background-color: #fdffc1;
+	background-color: #c4e7d4;
 	margin-top: 1%;
+	padding: 7% 7% 7% 7%;
 }
+
+.isi > .fitur-home {
+	display: inline-flex;
+	margin-left: 5%;
+}
+
+.fitur-content {
+	margin: 0% 3% 0% 3%;
+	padding: 3% 2% 3% 2%;
+	width: 25%;
+	height: auto;
+	background-color: #c4e7d4;
+	text-align: center;
+}
+
+.fitur-content > h4 {
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.gambar img {
+	width: 150px;
+	height: 150px;
+/*	border: 5px black solid;*/
+	/*margin: 20% 20% 20% 50%;*/
+}
+
+.fitur {
+	margin: 8% 5% 5% 6%;
+}
+
+/* --------- HOMEPAGE --------- */
+
+/* --------- DETAIL --------- */
 
 .isi > .detail {
 	padding: 4% 3% 4% 3%;
@@ -169,42 +199,19 @@ body {
 	width: 100%;
 }
 
-/*.isi > .row {
-	padding: 0 0 0 0;
-}*/
+/* --------- DETAIL --------- */
 
-.isi > .fitur-home {
-	padding: 5% 5% 5% 9%;
-}
 
-.fitur-content {
-	margin: 0% 3% 0% 3%;
-	border: 1px red solid;
-	background-color: yellow;
-	padding: 3% 2% 3% 2%;
-}
-
-.isi > .tentang {
-	padding: 5% 5% 5% 5%;	
-}
+/* --------- TENTANG --------- */
 
 .tentang-title {
 	text-align: center;
 	margin-bottom: 3%;
 }
 
+/* --------- TENTANG --------- */
 
-
-.gambar img {
-	width: 150px;
-	height: 150px;
-/*	border: 5px black solid;*/
-	/*margin: 20% 20% 20% 50%;*/
-}
-
-.fitur {
-	margin: 8% 5% 5% 6%;
-}
+/* --------- KEHILANGAN --------- */
 
 .kolom-cari {
 	padding: 2% 2% 2% 2%;
@@ -230,7 +237,7 @@ body {
 	/*border: 1px red solid;*/
 	margin: 5% 0 5% 0;
 	padding: 0 3% 3% 3%;
-	background-color: yellow;
+	background-color: #c4e7d4;
 }
 
 .form-header {
@@ -238,12 +245,19 @@ body {
 	margin: 10% 0 10% 0;
 }
 
+/* --------- KEHILANGAN --------- */
+
+/* --------- FOOTER --------- */
+
 .footer {
-	background-color: #000;
+	/*background-color: #292f36;*/
+	/*background-color: #584b53;*/
+	/*background-color: #f4ac45;*/
+	background-color: #f85a3e;
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	margin-left: 0;
-	margin-top: 1%;
+	margin-top: 0;
 	margin-bottom: 0;
 }
 
@@ -258,5 +272,30 @@ body {
 	text-align: center;
 	color: white;
 	margin: 0 auto;
-	padding-top: 2%;
+	padding-top: 35%;
+}
+
+/* --------- FOOTER --------- */
+
+.owl-prev {
+    width: 30px;
+    height: 155px;
+    position: absolute;
+    background-color: black;
+    top: 40%;
+    margin-left: -40px;
+    margin-top: -71px;
+    display: block !important;
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    right: -40px;
+    margin-top: -71px;
+    display: block !important;
+    border:0px solid black;
 }

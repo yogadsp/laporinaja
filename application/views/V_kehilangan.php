@@ -14,7 +14,8 @@
 		$nama = $this->session->userdata('nama');
 		$id = $this->session->userdata('id'); 
 	?>
-		<div class="container isi">
+		<div class="container-fluid isi">
+			<div class="container">
 			<div class="row">
 				<div class="form-group kolom-cari">
 					<form action="<?php echo base_url('C_kehilangan/cari');?>" method="post">
@@ -72,7 +73,7 @@
 					  </div>
 					</div>
 					<?php } ?>
-					
+				</div>	
 				
 			</div>
 		</div>

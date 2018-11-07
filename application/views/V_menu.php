@@ -8,7 +8,7 @@
 	  <a class="navbar-brand" href="<?php echo base_url();?>">
 	  	<!-- <span style="color: #ff1a1a;">LAPORIN</span> -->
 	  	<span style="color: black;">LAPORIN</span>
-	  	<span style="color: #f13030;">AJA</span>
+	  	<span style="color: #dc493a;">AJA</span>
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -17,13 +17,13 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto menu-co">
 	      <li class="nav-item menu-content">
-	        <a class="nav-link" href="<?php echo base_url();?>" style="color: black;">Home</a>
+	        <a class="nav-link menu-content-f" href="<?php echo base_url();?>">Home</a>
 	      </li>
 	      <li class="nav-item menu-content">
-	        <a class="nav-link" href="<?php echo base_url('C_kehilangan');?>" style="color: black;">Kehilangan</a>
+	        <a class="nav-link menu-content-f" href="<?php echo base_url('C_kehilangan');?>">Kehilangan</a>
 	      </li>
 	      <li class="nav-item menu-content">
-	        <a class="nav-link"
+	        <a class="nav-link menu-content-f"
 	        <?php 
 	        	if(empty($nama) && empty($id_user)){ 
 	        ?> 		
@@ -31,7 +31,7 @@
 	        <?php	
 	        	} else {
 	        ?>
-	        		href="<?php echo base_url('C_lapor_fasilitas');?>" style="color: black;">
+	        		href="<?php echo base_url('C_lapor_fasilitas');?>">
 	        <?php
 	    		} 
 	    	?>
@@ -39,7 +39,7 @@
 	        Fasilitas</a>
 	      </li>
 	      <li class="nav-item menu-content">
-	        <a class="nav-link" href="<?php echo base_url('C_tentang');?>" style="color: black;">Tentang</a>
+	        <a class="nav-link menu-content-f" href="<?php echo base_url('C_tentang');?>">Tentang</a>
 	      </li>
 
 	    </ul>

@@ -7,7 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/OwlCarousel/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/OwlCarousel/dist/assets/owl.carousel.theme.default.min.css">
 
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/flickity/flickity.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/flickity/flickity.min.css" media="screen">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/fontawesome/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<?php $this->load->view('tab-icon'); ?>
 
 </head>
@@ -18,8 +19,8 @@
 	
 		<div class="container">
 	      <div class="row">
+	      	<div class="owl-carousel owl-theme">
 	        
-	          	<div class="owl-carousel owl-theme">
 	          		
 	          	<?php
 	          		$i = 0;
@@ -48,15 +49,20 @@
 					<!-- <div class="contoh1">
 						<h5>2</h5>
 					</div> -->
-
-				</div>
+					<div class="owl-nav">
+				        <div class="owl-prev"></div>
+				        <div class="owl-next"></div>
+				    </div>
+				</div> 	
+	        
+	          	
 		   </div>
 		</div>
 
-		<div class="container isi">
+		<div class="container-fluid isi">
 			<div class="row fitur-home">
 
-				<div class="col-md-3 text-center fitur-content">
+				<div class="fitur-content">
 					<div class="gambar">
 						<img src="<?php echo base_url(); ?>assets/img/kehilangan.png">
 					</div>
@@ -64,7 +70,7 @@
 					<p>Fitur ini berfungsi membantu user untuk menemukan barang dengan membuat suatu laporan kehilangan barang</p>
 				</div>
 
-				<div class="col-md-3 text-center fitur-content">
+				<div class="fitur-content">
 					<div class="gambar">
 						<img src="<?php echo base_url(); ?>assets/img/ditemukan.png">
 					</div>
@@ -72,7 +78,7 @@
 					<p>Fitur ini berfungsi membantu user jika menemukan suatu barang dengan membuat suatu laporan untuk mempermudah barang ditemukan oleh pemilik</p>
 				</div>
 
-				<div class="col-md-3 text-center fitur-content">
+				<div class="fitur-content">
 					<div class="gambar">
 						<img src="<?php echo base_url(); ?>assets/img/fasilitas.png">
 					</div>
@@ -101,8 +107,11 @@
 		var owl = $('.owl-carousel');
 		owl.owlCarousel({
 		    loop:false,
-		    nav:false,
+		    nav:true,
+		    navText: 
+		    ['<img src="<?php echo base_url();?>assets/img/nav-prev.png">','<img src="<?php echo base_url();?>assets/img/nav-next.png">'],
 		    margin:10,
+		    dots:true,
 		    responsive:{
 		        0:{
 		            items:1
@@ -115,14 +124,11 @@
 		        }
 		    }
 		});
-		// owl.on('mousewheel', '.owl-stage', function (e) {
-		//     if (e.deltaY<0) {
-		//         owl.trigger('next.owl');
-		//     } else {
-		//         owl.trigger('prev.owl');
-		//     }
-		//     // e.preventDefault();
-		// });
+		$('.carousel').flickity({
+  // options
+		  cellAlign: 'center',
+		  contain: true
+		});
 		
 
 		for (var i = 0; i < 10 ;i++) {
