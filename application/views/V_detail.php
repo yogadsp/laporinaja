@@ -22,7 +22,7 @@
 				<div class="owl-carousel owl-theme">
 					<div class="item">
 						<div class="detail-img">
-							<img src="<?php echo base_url();?>assets/img/barang/jam-tangan.jpg">
+							<img src="<?php echo base_url();?>assets/barang/jam-tangan.jpg">
 						</div>
 					</div>
 				</div>

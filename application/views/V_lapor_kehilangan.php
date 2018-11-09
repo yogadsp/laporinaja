@@ -57,7 +57,7 @@
                   <textarea rows="4" cols="50" class="form-control" name="spesifikasi" form="frm_hilang" placeholder="Masukkan spesifikasi ... "></textarea>
                 </div>
             </div>
-						//upload gambar
+						<!-- upload gambar -->
             <div class="form-group row">
               <label for="lokasi" class="col-sm-4 col-form-label">Lokasi</label>
                 <div class="col-sm-8">
@@ -69,7 +69,7 @@
 						<div class="form-group row">
               <label for="gambar" class="col-sm-4 col-form-label">Gambar</label>
                 <div class="col-sm-8">
-                  <input type="file" name="img_hilang">
+                  <input type="file" name="img_barang">
                 </div>
 						</div>
 
