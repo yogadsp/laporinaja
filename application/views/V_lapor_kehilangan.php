@@ -57,20 +57,22 @@
                   <textarea rows="4" cols="50" class="form-control" name="spesifikasi" form="frm_hilang" placeholder="Masukkan spesifikasi ... "></textarea>
                 </div>
             </div>
-
+						//upload gambar
             <div class="form-group row">
               <label for="lokasi" class="col-sm-4 col-form-label">Lokasi</label>
                 <div class="col-sm-8">
                   <input type="text" class="form-control" name="lokasi" placeholder="Lokasi">
                 </div>
             </div>
-
-            <!-- <div class="form-group row">
-              <label for="kontak" class="col-sm-4 col-form-label">Kontak</label>
+						
+						
+						<div class="form-group row">
+              <label for="gambar" class="col-sm-4 col-form-label">Gambar</label>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" name="kontak" placeholder="Masukkan kontak yang bisa dihubungi .. ">
+                  <input type="file" class="form-control" name="img_gambar">
                 </div>
-            </div> -->
+						</div>
+
             <input type="hidden" name="id_user" value="<?php echo $id_user;?>">
             <input type="hidden" name="kontak" value="<?php echo $kontak;?>">
 
