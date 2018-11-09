@@ -13,6 +13,16 @@ class C_Laporan_Barang extends CI_Controller
 
 	
 	function simpan_laporan(){
+		$this->load->helper(array('form','url'));
+		
+		//config utk upload gambar
+		$config['upload_path']		= './assets/img/gambar/';
+		$config['allowed_types']	= 'jpg|png';
+		$config['max_width']		= 300px;
+		$config['max_height']		= 300px;
+		$config['max_size']		= 10240;
+		
+		//data utk post ke database
 		date_default_timezone_set('Asia/Jakarta');
 		$data['tanggal'] 		= date("Y-m-d H:i:s");
 		$data['jenis']			= $this->input->post('jenis');
