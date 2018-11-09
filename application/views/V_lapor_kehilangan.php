@@ -69,7 +69,7 @@
 						<div class="form-group row">
               <label for="gambar" class="col-sm-4 col-form-label">Gambar</label>
                 <div class="col-sm-8">
-                  <input type="file" class="form-control" name="img_gambar">
+                  <input type="file" name="img_hilang">
                 </div>
 						</div>
 
