@@ -8,3 +8,13 @@
 	border-right-style: solid;
 	border-right-color: red;
 }
+
+.isi {
+	padding: 50px 50px 50px 50px;
+}
+
+.kotak {
+	width: 15%;
+	height: auto;
+	margin-right: 3%;
+}

@@ -9,25 +9,29 @@
 						        </button>
 						      </div>
 						      <div class="modal-body">
-						        <form action="<?php echo base_url("C_Login/aksi_login"); ?>"  method="post">	
+						        <form id="frm_login" method="post">	
 						        	<div class="row"></div>
-						        	<input type="hidden" name="urlskrg" value="<?php echo current_url();?>">
+						        	<input type="hidden" name="urlskrg" value="<?php echo current_url();?>" 
+						        	id="urlskrg1">
 						        	<div class="form-group">
 						        		<label>Username		:</label>
-						        		<input type="text" name="user">
+						        		<input type="text" name="user" id="user1">
+						        		<p id="notif_u"></p>
 						        	</div>
 						        	<div class="form-group">
 						        		<label>Password		:</label>
-						        		<input type="password" name="pass">
+						        		<input type="password" name="pass" id="pass1">
+						        		<p id="notif_p"></p>
 						        	</div>
 						        	<input type="submit" class="btn btn-primary" value="SUBMIT">
 						        </form>
 						      </div>
 						      <div class="modal-footer">
-						      	
+						      
 						      
 						        
 						      </div>
 						    </div>
 						  </div>
 						</div>
+

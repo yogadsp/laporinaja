@@ -8,7 +8,7 @@
 	  <a class="navbar-brand" href="<?php echo base_url();?>">
 	  	<!-- <span style="color: #ff1a1a;">LAPORIN</span> -->
 	  	<span style="color: black;">LAPORIN</span>
-	  	<span style="color: #dc493a;">AJA</span>
+	  	<span style="color: #772e25;">AJA</span>
 	  </a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,9 @@
 	    <?php 
 	    	if(empty($nama) && empty($id_user)){ 
 	    ?>
-		    	<a href="#" data-toggle="modal" data-target="#login"><button class="btn btn-outline-success my-2 my-sm-0">LOGIN</button></a>
+		    	<a href="#" data-toggle="modal" data-target="#login">
+		    		<button class="btn btn-outline-success my-2 my-sm-0 t_login">LOGIN</button>
+		    	</a>
 	    <?php
 			} else { 
 		?>	

@@ -7,7 +7,7 @@ class Home extends CI_Controller {
 	{
 		$isi['data'] = 
 		$this->db->query
-		("SELECT id_kehilangan, tanggal, jenis, nama, spesifikasi, lokasi FROM barang ORDER BY tanggal DESC");
+		("SELECT id_kehilangan, tanggal, jenis, nama, spesifikasi, lokasi FROM barang ORDER BY tanggal DESC LIMIT 12");
 		$this->load->view('homepage', $isi);
 	}
 }

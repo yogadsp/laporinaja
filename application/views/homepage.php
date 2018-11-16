@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/OwlCarousel/dist/assets/owl.carousel.theme.default.min.css">
 
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/flickity/flickity.min.css" media="screen">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/fontawesome/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<?php $this->load->view('tab-icon'); ?>
 
 </head>
@@ -49,10 +48,10 @@
 					<!-- <div class="contoh1">
 						<h5>2</h5>
 					</div> -->
-					<div class="owl-nav">
+					<!-- <div class="owl-nav">
 				        <div class="owl-prev"></div>
 				        <div class="owl-next"></div>
-				    </div>
+				    </div> -->
 				</div> 	
 	        
 	          	
@@ -106,17 +105,17 @@
 	<script type="text/javascript">
 		var owl = $('.owl-carousel');
 		owl.owlCarousel({
-		    loop:false,
+		    loop:true,
 		    nav:true,
 		    navText: 
 		    ['<img src="<?php echo base_url();?>assets/img/nav-prev.png">','<img src="<?php echo base_url();?>assets/img/nav-next.png">'],
 		    margin:10,
-		    dots:true,
+		    dots:false,
 		    responsive:{
 		        0:{
 		            items:1
 		        },
-		        600:{
+		        800:{
 		            items:3
 		        },            
 		        1000:{
@@ -137,6 +136,73 @@
 		}
 		
 	</script>
+
+	<script>
+      $(document).ready(function() {
+          $("#frm_login").submit(function(e) {
+          	e.preventDefault();
+          	$('#notif_p').html("");
+          	$('#notif_u').html("");
+              var user2 = $("#user1").val();
+              var pass2 = $("#pass1").val();
+              var urlskrg2 = $("#urlskrg1").val();
+              var urlskrg = '<?php echo current_url();?>';
+              var url_admin = '<?php echo base_url('');?>/admin';
+
+              if (pass2 == '' && user2 == '') {
+              	  alert("Username & Password kosong");
+              	  // $('#notif_p').html("Password tidak boleh kosong");
+              } else if (user2 == '' && pass2 != '') {
+              	  alert("Username kosong");
+                  // $('#notif_u').html("Username tidak boleh kosong");
+              }	else if (user2 != '' && pass2 == '') {
+              	alert("Password kosong");
+              }else {
+                  $.ajax({
+                      type:"post",
+                      url:'<?php echo base_url(); ?>/C_Login/aksi_login',
+                      data: {
+                        user: user2,
+                        pass: pass2,
+                        urlskrg: urlskrg2
+                      },
+                      dataType: 'html',
+                      // data:new FormData(this),
+                      // processData:false,
+                      // contentType:false,
+                      // cache:false,
+                      // async:false,
+                      success:function (pesan) {
+                      	  if(pesan == 'user'){ //data diambil dari data yang di echo kan
+                      	  	alert('success');
+                      	  	window.location = urlskrg;
+                      	  } 
+                      	  else if (pesan == 'admin') 
+                      	  {
+                      	  	alert('success');
+                      	  	window.location = url_admin;
+                      	  }
+                      	  else if (pesan == 'salah_id') 
+                      	  {
+                      	  	alert('Username Salah');
+                      	  }
+                      	  else if (pesan == 'salah_pass')
+                      	  {
+                      	  	alert('Password Salah');
+                      	  }
+                      	  else if (pesan == 'salah_semua') {
+                      	  	alert("Username atau Password Salah");
+                      	  }
+                          
+                      },
+                      error:function(pesan){
+                          alert('fail');
+                      }
+                  });
+              }
+          });
+      });
+  </script>
 	
 
 </body>

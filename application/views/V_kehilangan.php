@@ -47,7 +47,7 @@
 					
 					<?php
 					foreach ($data->result() as $row ) { ?>
-					<div class="card list-data-content" style="width: 23%;">
+					<div class="card list-data-content" style="width: 25%;">
 					  <div class="card-body">
 					  	<?php 
 					  		if($row->jenis == 'kehilangan') {

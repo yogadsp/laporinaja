@@ -6,11 +6,11 @@
 
 		<?php $this->load->view('admin/view_menu');?>
 
-		<div class="col-md-10 isi">
+		<div class="col-md-10 tabel-kehilangan">
 			<table class="display table table-sm table-hover" id="contoh">
 			  <thead class="thead-dark">
 			    <tr>
-			      <th scope="col">ID Barang</th>
+			      <th scope="col">No</th>
 			      <th scope="col">Tanggal</th>
 			      <th scope="col">Jenis</th>
 			      <th scope="col">Nama Barang</th>
@@ -21,11 +21,13 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			  <?php foreach($data->result() as $row) { ?>
+			  <?php 
+			  $no = 1;
+			  foreach($data->result() as $row) { ?>
 			  	<tr>
-			      <td><?php echo $row->id_kehilangan ?></td>
+			      <td><?php echo $no++ ?></td>
 			      <td><?php echo $row->tanggal ?></td>
-			      <td><?php echo $row->jenis ?></td>
+			      <td><?php echo $row->jenis ?></td>s
 			      <td><?php echo $row->nama ?></td>
 			      <td><?php echo $row->spesifikasi ?></td>
 			      <td><?php echo $row->lokasi ?></td>
@@ -40,7 +42,7 @@
 
 	
 </div>
-
+	
 	<?php $this->load->view('admin/view_footer');?>
 	
 </body>
