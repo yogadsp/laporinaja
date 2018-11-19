@@ -1,20 +1,147 @@
+body {
+	background-color: #ededee;
+}
+
 .header {
 	width: 100%;
-	height: 50px;
-	background-color: red;
+	height: auto;
+	background-color: #f85a3e;
+	padding: 10px 10px 10px 10px;
+}
+
+.header > a {
+	text-decoration: none;
+}
+
+.board {
+	color: white;
+	
+	font-size: 25px;
 }
 
 .navi {
-	border-right-style: solid;
-	border-right-color: red;
+	/*border-right-style: solid;*/
+	/*border-right-color: red;*/
+	position: fixed;
+	vertical-align: top; 
+	left: 0;
+	z-index: 999;
+	width: 250px;
+	left: 0;
+	bottom: 0;
+	height: 100vh; /*untuk mengatur agar tinggi sama dengan 1 halaman*/
+	top: 55px;
+	background-color: #403f4c;
+	color: white;
+	box-shadow: 3px 0px 5px #888888;
+	margin: 0;
+}
+
+.navi a {
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.navi a:hover {
+	background-color: #51505c;
+}
+
+.navi a:active {
+	background-color: #51505c;
 }
 
 .isi {
 	padding: 50px 50px 50px 50px;
+	margin-left: 250px;
+	margin-top: 55px;
+	float: left;
+	width: 100%;
+}
+
+.kotak-judul {
+
 }
 
 .kotak {
-	width: 15%;
+	width: auto;
 	height: auto;
 	margin-right: 3%;
+	margin-bottom: 3%;
+	background-color: white;
+	padding: 20px 30px 20px 30px;
+	/*border: 1px black solid;*/
+	box-shadow: 0px 0px 30px #888888;
+}
+
+.menu {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	clear: both;
+	/*background-color: #292f36;*/
+	/*background-color: #f4ac45;*/
+	/*background-color: #584b53;*/
+	background-color: #f85a3e;
+	box-shadow: 0px 1px 10px #888888;
+}
+
+.menu-kiri {
+	padding-top: 4.4%;
+	border: 1px black solid;
+
+}
+
+.menu-co {
+	margin: 0 10% 0 22%;
+}
+
+.menu-content {
+	margin: 0 10% 0 10%;
+}
+
+.menu .menu-co .menu-content a {
+	color: white;
+}
+
+/*.menu-content-f {
+	color: black;
+}*/
+
+.nav-item > a {
+	color: white;
+}
+
+.icon-user {
+	width: 3.5%;
+	height: 40px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	border-radius: 25px;
+	padding-top: 3px;
+	padding-left: 20px;
+}
+
+.icon-user:hover {
+	background-color: white;
+}
+
+.icon-user img {
+	width: 30px;
+	height: 30px;
+	/*float: right;*/
+	margin-right: 5px;
+	margin-top: 0;
+	
+}
+
+.t_login {
+	border-color: white;
+	color: white;
+}
+
+.t_login:hover {
+	background-color: #f4ac45;
+	border-color: white;
 }

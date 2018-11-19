@@ -19,13 +19,10 @@
 				<table class="table table-bordered table-striped" id="contoh">
 				  <thead class="thead-dark">
 				    <tr>
-				     <th scope="col">No</th>
-				      <th scope="col">Tanggal</th>
-				      <th scope="col">Nama Barang</th>
-				      <th scope="col">Spesifikasi</th>
-				      <th scope="col">Lokasi</th>
+				      <th scope="col">No</th>
+				      <th scope="col">NIM</th>
+				      <th scope="col">Nama</th>
 				      <th scope="col">Kontak</th>
-				      <th scope="col">User</th>
 				    </tr>
 				  </thead>
 				  <tbody>
@@ -34,12 +31,9 @@
 				  	foreach($data->result() as $row) { ?>
 				  	<tr>
 				      <td><?php echo $no++ ?></td>
-				      <td><?php echo $row->tanggal ?></td>
-				      <td><?php echo $row->nama ?></td>
-				      <td><?php echo $row->spesifikasi ?></td>
-				      <td><?php echo $row->lokasi ?></td>
-				      <td><?php echo $row->kontak ?></td>
 				      <td><?php echo $row->id_user ?></td>
+				      <td><?php echo $row->nama ?></td>
+				      <td><?php echo $row->kontak ?></td>
 				    </tr>
 				<?php } ?>
 				  </tbody>

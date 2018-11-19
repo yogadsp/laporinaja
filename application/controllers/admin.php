@@ -5,6 +5,7 @@ class Admin extends CI_Controller {
 
 	public function index()
 	{
+		$isi['title'] = "Home";
 		$isi['kehilangan']	= $this->db->query("SELECT * FROM barang WHERE jenis='kehilangan'");
 		$isi['ditemukan']	= $this->db->query("SELECT * FROM barang WHERE jenis='ditemukan'");
 		$isi['fasilitas']	= $this->db->query("SELECT * FROM fasilitas");
@@ -27,5 +28,11 @@ class Admin extends CI_Controller {
 		$isi['title'] 	= "Fasilitas";
 		$isi['data']	= $this->db->query("SELECT * FROM fasilitas");
 		$this->load->view('admin/view_fasilitas',$isi);
+	}
+
+	public function user() {
+		$isi['title'] 	= "User";
+		$isi['data']	= $this->db->query("SELECT * FROM user WHERE level='user'");
+		$this->load->view('admin/view_user',$isi);
 	}
 }

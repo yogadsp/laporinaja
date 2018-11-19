@@ -24,6 +24,7 @@ body {
 	/*background-color: #f4ac45;*/
 	/*background-color: #584b53;*/
 	background-color: #f85a3e;
+	box-shadow: 0px 1px 10px #888888;
 }
 
 .menu-co {
@@ -145,6 +146,7 @@ body {
 	background-color: #c4e7d4;
 	margin-top: 1%;
 	padding: 7% 7% 7% 7%;
+	/*min-height: calc(100vh - 70px);*/
 }
 
 .isi > .fitur-home {
@@ -267,9 +269,11 @@ body {
 	/*background-color: #f85a3e;*/
 	width: 100%;
 	height: 80px;
-	margin-left: 0;
+	/*margin-left: 0;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 0;*/
+	/*bottom: 0;
+	position: relative;*/
 }
 
 .container-fluid {
@@ -283,7 +287,7 @@ body {
 	text-align: center;
 	color: white;
 	margin: 0 auto;
-	padding-top: 35%;
+	padding-top: 2%;
 }
 
 /* --------- FOOTER --------- */
@@ -292,7 +296,6 @@ body {
     width: 30px;
     height: 155px;
     position: absolute;
-    background-color: black;
     top: 40%;
     margin-left: -40px;
     margin-top: -71px;
@@ -302,7 +305,7 @@ body {
 
 .owl-next {
     width: 30px;
-    height: 30px;
+    height: 155px;
     position: absolute;
     top: 40%;
     right: -40px;

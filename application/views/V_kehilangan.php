@@ -35,7 +35,7 @@
 						href="<?php echo base_url('C_kehilangan/form_laporan');?>">
 					<?php 
 						}
-					?><button class="btn btn-warning">Buat Laporan</button></a>
+					?><button class="btn btn-warning" id="laporan">Buat Laporan</button></a>
 				</div>
 
 			</div>
@@ -84,6 +84,8 @@
 	<script src="<?php echo base_url();?>assets/js/jquery-3.3.1.min.js"></script>
 	<script src="<?php echo base_url();?>assets/js/jquery.mousewheel.min.js"></script>
 	<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
+
+	<?php $this->load->view('fungsi_login'); ?>
 
 </body>
 </html>
