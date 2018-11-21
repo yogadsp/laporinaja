@@ -81,9 +81,10 @@
 		<?php $this->load->view('V_footer'); ?>
 	</div>
 
+	<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
 	<script src="<?php echo base_url();?>assets/js/jquery-3.3.1.min.js"></script>
 	<script src="<?php echo base_url();?>assets/js/jquery.mousewheel.min.js"></script>
-	<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
+	
 
 	<?php $this->load->view('fungsi_login'); ?>
 

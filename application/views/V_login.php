@@ -16,12 +16,10 @@
 						        	<div class="form-group">
 						        		<label>Username		:</label>
 						        		<input type="text" name="user" id="user1">
-						        		<p id="notif_u"></p>
 						        	</div>
 						        	<div class="form-group">
 						        		<label>Password		:</label>
 						        		<input type="password" name="pass" id="pass1">
-						        		<p id="notif_p"></p>
 						        	</div>
 						        	<input type="submit" class="btn btn-primary" value="SUBMIT">
 						        </form>

@@ -34,18 +34,18 @@ class C_Laporan_Barang extends CI_Controller
 
 		//config utk upload gambar
 
-		// $config['upload_path']		= './upload/barang/';
-		// $config['allowed_types']	= 'jpg|png|jpeg';
-		// $config['max_size']			= 10;
-		// $config['encrypt_name'] 	= TRUE;
-		// $this->load->library('upload', $config);
+		$config['upload_path']		= './upload/barang/';
+		$config['allowed_types']	= 'jpg|png|jpeg';
+		$config['max_size']			= 10240;
+		$config['encrypt_name'] 	= TRUE;
+		$this->load->library('upload', $config);
 
 		// if ( ! $this->upload->do_upload("img_barang")) {
-	 //        // echo '<script>alert("Error");</script>';
+	 //        echo '<script>alert("Error");</script>';
 	 //        $error = array('error' => $this->upload->display_errors());
 		//     $this->session->set_flashdata('error',$error['error']);
 
-	 //        // $error = array('error' => $this->upload->display_errors());
+	 //        $error = array('error' => $this->upload->display_errors());
   //     	} else {
   //     		$data = array('upload_data' => $this->upload->data());
 	 //        echo '<script>alert("Image Uploaded Successfully");</script>';

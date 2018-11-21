@@ -12,6 +12,8 @@ class C_kehilangan  extends CI_Controller {
 	}
 	function form_laporan()
 	{
+		$this->load->model('M_Keamanan');
+		$this->M_Keamanan->cek_login();
 		$this->load->view('V_lapor_kehilangan');
 	}
 

@@ -12,7 +12,7 @@
     $id_user = $this->session->userdata('id_user'); 
     $kontak = $this->session->userdata('kontak'); 
   ?>
-
+  
   <?php $this->load->view('V_menu'); ?>
   <?php $this->load->view('V_login'); ?>
   <?php $this->load->view('V_header'); ?>
@@ -62,18 +62,18 @@
                   <input type="text" class="form-control" name="lokasi" placeholder="Lokasi" id="lokasi1">
                 </div>
             </div>
-<!-- 
+ 
             <div class="form-group row">
               <label for="foto" class="col-sm-4 col-form-label">Foto</label>
                 <div class="col-sm-8">
-                  <input type="file" name="img_barang" accept=".jpg,.png,.bmp" id="foto">
+                  <input type="file" name="img_barang" accept=".jpg,.png,.jpeg,.bmp" id="foto">
                 </div>
-            </div> -->
+            </div>
             <input type="hidden" name="id_user" value="<?php echo $id_user;?>" id="id_user1">
             <input type="hidden" name="kontak" value="<?php echo $kontak;?>" id="kontak1">
 
             <input type="submit" class="btn btn-primary btn-block" value="Submit" id="submit">
-            <p id="feedback"></p>
+            <!-- <p id="feedback"></p> -->
 
           </form>
 
