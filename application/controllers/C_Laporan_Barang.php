@@ -51,11 +51,13 @@ class C_Laporan_Barang extends CI_Controller
 
 		$this->load->model('User/M_Laporan_Barang');
 		$this->M_Laporan_Barang->simpan_laporann($data);
+
+		echo '<script>alert("You Have Successfully upload this Record!");</script>';
 			redirect(base_url('C_Laporan_Barang'), 'refresh');
-			echo '<script>alert("You Have Successfully updated this Record!");</script>';
+		
 		}else{
 			echo '<script>alert("Failed upload this Record!");</script>';
-			redirect(base_url());
+			redirect(base_url('C_lapor_fasilitas'), 'refresh');
 		}
         
                

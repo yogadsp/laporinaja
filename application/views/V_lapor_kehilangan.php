@@ -52,14 +52,14 @@
             <div class="form-group row">
               <label for="spesifikasi" class="col-sm-4 col-form-label">Spesifikasi</label>
                 <div class="col-sm-8">
-                  <textarea rows="4" cols="50" class="form-control" name="spesifikasi" form="frm_hilang"     id="spesifikasi1" placeholder="Masukkan spesifikasi ... "></textarea>
+                  <textarea rows="4" cols="50" class="form-control" name="spesifikasi" form="frm_hilang"     id="spesifikasi1" placeholder="Masukkan spesifikasi ... " required></textarea>
                 </div>
             </div>
 
             <div class="form-group row">
               <label for="lokasi" class="col-sm-4 col-form-label">Lokasi</label>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" name="lokasi" placeholder="Lokasi" id="lokasi1">
+                  <input type="text" class="form-control" name="lokasi" placeholder="Lokasi" id="lokasi1" required>
                 </div>
             </div>
  

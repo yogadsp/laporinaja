@@ -32,30 +32,36 @@
 				- id_fasilitas
 				- tanggal_laporan
 	     ------------>
-			    <form action="<?php echo base_url();?>C_lapor_fasilitas/simpan_laporan" method="post" id="frm_keluhan">
+			    <form action="<?php echo base_url();?>C_lapor_fasilitas/simpan_laporan" method="post" id="frm_keluhan" enctype="multipart/form-data">
 			      <h1 class="text-center form-header">Buat Laporan</h1>
 			      <input type="hidden" name="id_user" value="<?php echo $id_user;?>">
 			      <input type="hidden" name="kontak" value="<?php echo $kontak;?>">
 			      <div class="form-group row">
 			        <label for="nama_fasilitas" class="col-sm-4 col-form-label">Nama Fasilitas</label>
 			          <div class="col-sm-8">
-			            <input type="text" class="form-control" name="nama" placeholder="Masukkan nama fasilitas yang akan dilaporkan ...">
+			            <input type="text" class="form-control" name="nama" placeholder="Masukkan nama fasilitas yang akan dilaporkan ..." required="Nama Masih Kosong!">
 			          </div>
 			      </div>
 
 			      <div class="form-group row">
 			        <label for="keluhan" class="col-sm-4 col-form-label">Keluhan</label>
 			          <div class="col-sm-8">
-			            <textarea rows="4" cols="50" class="form-control" name="keluhan" form="frm_keluhan" placeholder="Deskripsikan keluhan anda ... "></textarea>
+			            <textarea rows="4" cols="50" class="form-control" name="keluhan" form="frm_keluhan" placeholder="Deskripsikan keluhan anda ... " required></textarea>
 			          </div>
 			      </div>
 
 			      <div class="form-group row">
 			        <label for="lokasi" class="col-sm-4 col-form-label">Lokasi</label>
 			          <div class="col-sm-8">
-			            <input type="text" class="form-control" name="lokasi" placeholder="Lokasi">
+			            <input type="text" class="form-control" name="lokasi" placeholder="Lokasi" required>
 			          </div>
 			      </div>
+			      <div class="form-group row">
+    		        <label for="foto" class="col-sm-4 col-form-label">Foto</label>
+        		      <div class="col-sm-8">
+               			<input type="file" name="img_barang" accept=".jpg,.png,.jpeg,.bmp" id="foto" required>
+                	</div>
+           		 </div>
 
 			      <input type="submit" class="btn btn-primary btn-block" name="tambah" value="Submit">
 
