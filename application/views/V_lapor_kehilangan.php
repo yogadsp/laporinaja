@@ -45,7 +45,7 @@
             <div class="form-group row">
               <label for="nama_barang" class="col-sm-4 col-form-label">Nama Barang</label>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" name="nama_barang" placeholder="Nama Barang" id="nama_barang1">
+                  <input type="text" class="form-control" name="nama_barang" placeholder="Nama Barang" id="nama_barang1" required>
                 </div>
             </div>
 
@@ -66,7 +66,7 @@
             <div class="form-group row">
               <label for="foto" class="col-sm-4 col-form-label">Foto</label>
                 <div class="col-sm-8">
-                  <input type="file" name="img_barang" accept=".jpg,.png,.jpeg,.bmp" id="foto">
+                  <input type="file" name="img_barang" accept=".jpg,.png,.jpeg,.bmp" id="foto" required>
                 </div>
             </div>
             <input type="hidden" name="id_user" value="<?php echo $id_user;?>" id="id_user1">
@@ -102,7 +102,7 @@
             });
         });
   </script> -->
-  <script type="text/javascript">
+<!--   <script type="text/javascript">
       $(document).ready(function() {
           $("#submit").click(function() {
               var jenis2 = $("input[type=radio]:checked").val();
@@ -111,6 +111,7 @@
               var lokasi2 = $("#lokasi1").val();
               var id_user2 = $("#id_user1").val();
               var kontak2 = $("#kontak1").val();
+              var gambar2 = $("#foto").val();
               if (jenis2 == '' || nama_barang2 == '' || spesifikasi2 == '' || lokasi2 == '') {
                   alert("Insertion Failed Some Fields are Blank....!!");
               } else {
@@ -123,11 +124,10 @@
                         spesifikasi: spesifikasi2,
                         lokasi: lokasi2,
                         id_user: id_user2,
-                        kontak: kontak2
+                        kontak: kontak2,
+                        gambar: gambar2
                       },
-                      success:function (data) {
-                          alert('success');
-                      },
+                      
                       error:function(data){
                           alert('fail');
                       }
@@ -135,7 +135,7 @@
               }
           });
       });
-  </script>
+  </script> -->
 
 
   
