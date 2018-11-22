@@ -7,7 +7,7 @@ class C_kehilangan  extends CI_Controller {
 	{	
 		$isi['data'] = 
 		$this->db->query
-		("SELECT id_kehilangan, tanggal, jenis, nama, spesifikasi, lokasi FROM barang ORDER BY tanggal DESC");
+		("SELECT id_kehilangan, tanggal, jenis, nama, spesifikasi, lokasi FROM barang ORDER BY tanggal DESC limit 12");
 		$this->load->view('V_kehilangan',$isi);
 	}
 	function form_laporan()

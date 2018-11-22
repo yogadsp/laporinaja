@@ -40,10 +40,11 @@
     </div>
 	<?php $this->load->view('V_footer'); ?>
 
-	<script src="<?php echo base_url();?>assets/js/jquery-3.3.1.min.js"></script>
+	
 	<script src="<?php echo base_url(); ?>assets/OwlCarousel/dist/owl.carousel.min.js"></script>
 	<script src="<?php echo base_url();?>assets/js/jquery.mousewheel.min.js"></script>
 	<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>assets/js/jquery-3.3.1.min.js"></script>
 	
 
 </body>

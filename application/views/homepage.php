@@ -52,7 +52,7 @@
 					  			echo '<p class="card-text text-status-d">Ditemukan</p>';
 					  		}
 					  		?>
-						    <a href="#"><h5 class="card-title"><?php echo $row->nama; ?></h5></a>
+						    <a href="<?php echo base_url();?>C_kehilangan/detail/<?php echo $row->id_kehilangan; ?>"><h5 class="card-title"><?php echo $row->nama; ?></h5></a>
 						    <h6 class="card-subtitle mb-2 text-muted"><?php echo $row->tanggal; ?></h6>
 						    <p class="card-text" id="<?php echo "clampjs$i++"; ?>">
 						    	<?php echo $row->spesifikasi; ?></p>
