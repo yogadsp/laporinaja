@@ -313,3 +313,17 @@ body {
     display: block !important;
     border:0px solid black;
 }
+
+/*LIVE CHAT*/
+
+.chat-co {
+	width: 10%;
+	height: auto;
+	padding: 10px 10px 10px 10px;
+	bottom: 0;
+	right: 100px;
+	position: absolute;
+	background-color: grey;
+	position: fixed;
+	color: white;
+}

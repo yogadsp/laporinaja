@@ -145,3 +145,12 @@ body {
 	background-color: #f4ac45;
 	border-color: white;
 }
+
+.inbox {
+	margin-right: 18px;
+}
+
+.inbox > img {
+	width: 25px;
+	height: auto;
+}

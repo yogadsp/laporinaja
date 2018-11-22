@@ -26,6 +26,7 @@
 				      <th scope="col">Lokasi</th>
 				      <th scope="col">Kontak</th>
 				      <th scope="col">User</th>
+				      <th scope="col">Status</th>
 				    </tr>
 				  </thead>
 				  <tbody>
@@ -39,7 +40,35 @@
 				      <td><?php echo $row->spesifikasi ?></td>
 				      <td><?php echo $row->lokasi ?></td>
 				      <td><?php echo $row->kontak ?></td>
-				      <td><?php echo $row->id_user ?></td>
+				      <td>
+					      <input type="button" class="btn btn-info btn-sm view_data" value="<?php echo $row->id_user; ?>" id="<?php echo $row->id_user; ?>">
+				      </td>
+				      <td>
+				      	<center>
+				      		<?php 
+				      			$status = $row->status;
+				      			if($status == '1') {
+				      				echo '<span class="badge badge-success">Posted</span>';
+				      			} else if($status == '0') {
+				      				echo '<span class="badge badge-warning">Pending</span>';
+				      		?> 	
+					      		<input type="button" class="btn btn-info btn-sm ubah_status" value="Change" id="<?php echo $row->id_kehilangan; ?>">
+				      		<?php 
+				      			} else {
+				      				echo '<span class="badge badge-warning">Pending</span>';
+				      		?>
+				      			<input type="button" class="btn btn-info btn-sm ubah_status" value="Change" id="<?php echo $row->id_kehilangan; ?>">
+				      		<?php
+				      			}
+				      		?>
+				      					 
+					      	<!-- <a href="<?php echo base_url();?>admin/edit_kehilangan/<?php echo $row->id_kehilangan; ?>" style="font-size: 0.8em;">Edit</a> -->
+					      	
+
+
+					      	<!-- <span class="badge badge-danger">Pending</span> -->
+				      	</center>
+				      </td>
 				    </tr>
 				<?php } ?>
 				  </tbody>
@@ -52,6 +81,8 @@
 </div>
 	
 	<?php $this->load->view('admin/view_footer');?>
+	<?php $this->load->view('admin/view_user_modal');?>
+	<?php $this->load->view('admin/fungsi_ubah_status');?>
 	
 </body>
 </html>

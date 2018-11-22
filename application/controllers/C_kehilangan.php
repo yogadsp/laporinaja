@@ -20,6 +20,7 @@ class C_kehilangan  extends CI_Controller {
 	public function detail()
 	{
 		$key = $this->uri->segment(3);
+		
 		$query = 
 		$this->db->query
 		("SELECT tanggal, jenis, nama, spesifikasi, lokasi, kontak, gambar FROM barang WHERE id_kehilangan='$key'");

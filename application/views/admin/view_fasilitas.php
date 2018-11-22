@@ -39,7 +39,9 @@
 					      <td><?php echo $row->keluhan ?></td>
 					      <td><?php echo $row->lokasi ?></td>
 					      <td><?php echo $row->kontak ?></td>
-					      <td><?php echo $row->id_user ?></td>
+					      <td>
+						      <input type="button" class="btn btn-info btn-sm view_data" value="<?php echo $row->id_user; ?>" id="<?php echo $row->id_user; ?>">
+					      </td>
 					    </tr>
 					<?php } ?>
 					  </tbody>
@@ -51,6 +53,8 @@
 </div>
 
 	<?php $this->load->view('admin/view_footer');?>
+	<?php $this->load->view('admin/view_user_modal');?>
+
 
 </body>
 </html>

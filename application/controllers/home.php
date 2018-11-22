@@ -11,4 +11,3 @@ class Home extends CI_Controller {
 		$this->load->view('homepage', $isi);
 	}
 }
-
