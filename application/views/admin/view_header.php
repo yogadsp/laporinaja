@@ -10,7 +10,7 @@
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-dark menu">
-	  <a class="navbar-brand" href="<?php echo base_url();?>">
+	  <a class="navbar-brand" href="<?php echo base_url();?>admin">
 	  	<!-- <span style="color: #ff1a1a;">LAPORIN</span> -->
 	  	<span style="color: black;">LAPORIN</span>
 	  	<span style="color: #772e25;">AJA</span>
@@ -33,6 +33,11 @@
 	    <?php
 			} else { 
 		?>	
+			<a href="<?php echo base_url(); ?>admin/pesan">
+				<div class="inbox">
+					<img src="<?php echo base_url(); ?>assets/img/inbox.png">
+				</div>
+			</a>
 			<div class="dropdown">
 
 				<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">

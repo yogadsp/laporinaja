@@ -13,28 +13,29 @@
     <?php $this->load->view('V_login'); ?>
     <?php $this->load->view('V_header'); ?>
 	
-		<div class="container isi">
-			<div class="row tentang">
-        
-        <h2 class="tentang-title">Tentang</h2>
-        
-        <p style="text-align: justify;"> Laporin Aja adalah sebuah web yang berisi pelayanan tanggapan mengenai informasi kehilangan dan
-        laporan kerusakan sarana yang ada di kampus ITERA. Web ini nantinya akan berisi fitur yang dapat
-        melaporkan tanggapan aktivis ITERA mengenai sarana serta melaporkan penemuan ataupun kehilangan
-        barang. Fitur lain dari web ini adalah dengan adanya Live Chat yang dapat digunakan untuk melaporkan
-        barang hilang ataupun kerusakan sarana yang akan langsung ditanggapi oleh admin. Selanjutnya admin akan
-        merespon dengan langsung menindaklanjuti laporan dengan memberikan pengumuman di situs web ataupun
-        melapor ke pihak berwenang di ITERA.</p>
+		<div class="container-fluid isi">
+            <div class="container">
+    			<div class="row">
+                    
+                    <h2 class="tentang-title">Tentang</h2>
+                    
+                    <p style="text-align: justify;"> Laporin Aja adalah sebuah web yang berisi pelayanan tanggapan mengenai informasi kehilangan dan
+                    laporan kerusakan sarana yang ada di kampus ITERA. Web ini nantinya akan berisi fitur yang dapat
+                    melaporkan tanggapan aktivis ITERA mengenai sarana serta melaporkan penemuan ataupun kehilangan
+                    barang. Fitur lain dari web ini adalah dengan adanya Live Chat yang dapat digunakan untuk melaporkan
+                    barang hilang ataupun kerusakan sarana yang akan langsung ditanggapi oleh admin. Selanjutnya admin akan
+                    merespon dengan langsung menindaklanjuti laporan dengan memberikan pengumuman di situs web ataupun
+                    melapor ke pihak berwenang di ITERA.</p>
 
-        <p>Tim : <br>
-        1. Yoga Dwi Septana (14116006)<br>
-        2. Fadila Eka Noperta (14116021)<br>
-        3. Hendy Prasetya (14116048)<br>
-        4. Dewi Fidrianingrum (14116061)<br>
-        5. Meidiarni Kurnia Dewi (14116137)<br>
-        6. Muhammad Farhan (14116147)<br>
-        7. Mu’minatul Faizah (14116172)</p>
-    
+                    <p>Tim : <br>
+                    1. Yoga Dwi Septana (14116006)<br>
+                    2. Fadila Eka Noperta (14116021)<br>
+                    3. Hendy Prasetya (14116048)<br>
+                    4. Dewi Fidrianingrum (14116061)<br>
+                    5. Meidiarni Kurnia Dewi (14116137)<br>
+                    6. Muhammad Farhan (14116147)<br>
+                    7. Mu’minatul Faizah (14116172)</p>
+                </div>
     	</div>
     </div>
 	<?php $this->load->view('V_footer'); ?>

@@ -3,13 +3,11 @@
 
           $("#frm_login").submit(function(e) {
           	e.preventDefault();
-          	$('#notif_p').html("");
-          	$('#notif_u').html("");
               var user2 = $("#user1").val();
               var pass2 = $("#pass1").val();
               var urlskrg2 = $("#urlskrg1").val();
               
-              var url_admin = '<?php echo base_url('');?>/admin';
+              var url_admin = '<?php echo base_url('');?>admin';
 
               var urlskrg = '<?php echo current_url();?>';
 

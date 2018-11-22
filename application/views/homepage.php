@@ -12,6 +12,23 @@
 
 </head>
 <body>
+
+	<?php
+	//     $id_user = $this->session->userdata('id_user'); 
+	// if(empty($id_user)){
+	// 	$nama = "";
+	// 	$kontak = "";
+	// } else {
+	// 	$id_user = $this->session->userdata('id_user');
+	// 	$nama = $this->session->userdata('nama');
+	// 	$kontak = $this->session->userdata('kontak');
+	// }
+
+		$id_user = $this->session->userdata('id_user');
+		$nama = $this->session->userdata('nama');
+		$kontak = $this->session->userdata('kontak');
+	    
+  	?>
 	<?php $this->load->view('V_menu'); ?>
 	<?php $this->load->view('V_login'); ?>
 	<?php $this->load->view('V_header'); ?>
@@ -91,8 +108,10 @@
 			
 
 		</div>
-	
+
+		
 		<?php $this->load->view('V_footer'); ?>
+		<?php $this->load->view('V_pesan'); ?>
 	
 	<script src="<?php echo base_url();?>assets/OwlCarousel/dist/owl.carousel.min.js"></script>
 	<script src="<?php echo base_url();?>assets/Clamp/clamp.min.js"></script>
@@ -125,7 +144,7 @@
 
 		for (var i = 0; i < 10 ;i++) {
 			var module = document.getElementById("clampjs"+i);
-			$clamp(module, {clamp: 3});
+			$clamp(module, {clamp: 3});	
 		}
 		
 	</script>

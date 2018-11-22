@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_Login extends CI_model{
 
-	function cek_login($data){		
+	function cek_login($data){
 		$pwd = md5($data['p']);
 		
 		$this->db->where('id_user',$data['u']);
