@@ -199,16 +199,16 @@ body {
 }
 
 .detail-img {
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 100%;
 	border: 2px red solid;
 	display : flex;
   	align-items : center;
 }
 
 .detail-img img {
-	height: auto;
-	width: 100%;
+	max-width: 400px;
+	max-height: 400px
 }
 
 /* --------- DETAIL --------- */

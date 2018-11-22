@@ -22,8 +22,7 @@
 				<div class="owl-carousel owl-theme">
 					<div class="item">
 						<div class="detail-img">
-							<img src="<?php echo base_url();?>assets/img/barang/ed88b2e27153525c89d8e746f25c96f8.jpg">
-							//keluarin gambarnya
+							<img src="<?php echo base_url('upload/barang/');	 echo $gambar; ?>">			
 						</div>
 					</div>
 				</div>
@@ -32,7 +31,6 @@
 			
 
 			<div class="col-md-6">
-				<p><?php echo base_url();?>assets/img/barang/<? echo $gambar; ?>
 				<h2><?php echo $nama; ?></h2>
 				<h5><?php echo $tanggal; ?></h5>
 				<h5><?php echo $lokasi; ?></h5>
