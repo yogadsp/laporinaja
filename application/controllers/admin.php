@@ -18,6 +18,18 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/view_kehilangan',$isi);
 	}
 
+	public function chart_data()
+	{
+		header("Content-Type: application/json");
+	    $this->db->select('*');
+	    $this->db->from('barang');
+	    $query = $this->db->get();
+
+	    echo json_encode($query->result());
+	}
+
+
+
 	// public function edit_status_postingan() {
 	// 	$id_kehilangan = $this->uri->segment(3);
 
