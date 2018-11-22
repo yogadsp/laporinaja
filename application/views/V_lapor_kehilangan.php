@@ -12,7 +12,7 @@
     $id_user = $this->session->userdata('id_user'); 
     $kontak = $this->session->userdata('kontak'); 
   ?>
-
+  
   <?php $this->load->view('V_menu'); ?>
   <?php $this->load->view('V_login'); ?>
   <?php $this->load->view('V_header'); ?>
@@ -32,7 +32,7 @@
         - id_admin di null dulu
         - tanggal_laporan
        ------------>
-          <form action="" method="post" id="frm_hilang" enctype="multipart/form-data">
+          <form action="<?php echo base_url('C_Laporan_Barang/simpan_laporan') ?>" method="post" id="frm_hilang" enctype="multipart/form-data">
             <h1 class="text-center form-header">Buat Laporan</h1>
             
             <div class="form-group row">
@@ -45,35 +45,35 @@
             <div class="form-group row">
               <label for="nama_barang" class="col-sm-4 col-form-label">Nama Barang</label>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" name="nama_barang" placeholder="Nama Barang" id="nama_barang1">
+                  <input type="text" class="form-control" name="nama_barang" placeholder="Nama Barang" id="nama_barang1" required>
                 </div>
             </div>
 
             <div class="form-group row">
               <label for="spesifikasi" class="col-sm-4 col-form-label">Spesifikasi</label>
                 <div class="col-sm-8">
-                  <textarea rows="4" cols="50" class="form-control" name="spesifikasi" form="frm_hilang"     id="spesifikasi1" placeholder="Masukkan spesifikasi ... "></textarea>
+                  <textarea rows="4" cols="50" class="form-control" name="spesifikasi" form="frm_hilang"     id="spesifikasi1" placeholder="Masukkan spesifikasi ... " required></textarea>
                 </div>
             </div>
 
             <div class="form-group row">
               <label for="lokasi" class="col-sm-4 col-form-label">Lokasi</label>
                 <div class="col-sm-8">
-                  <input type="text" class="form-control" name="lokasi" placeholder="Lokasi" id="lokasi1">
+                  <input type="text" class="form-control" name="lokasi" placeholder="Lokasi" id="lokasi1" required>
                 </div>
             </div>
-<!-- 
+ 
             <div class="form-group row">
               <label for="foto" class="col-sm-4 col-form-label">Foto</label>
                 <div class="col-sm-8">
-                  <input type="file" name="img_barang" accept=".jpg,.png,.bmp" id="foto">
+                  <input type="file" name="img_barang" accept=".jpg,.png,.jpeg,.bmp" id="foto" required>
                 </div>
-            </div> -->
+            </div>
             <input type="hidden" name="id_user" value="<?php echo $id_user;?>" id="id_user1">
             <input type="hidden" name="kontak" value="<?php echo $kontak;?>" id="kontak1">
 
             <input type="submit" class="btn btn-primary btn-block" value="Submit" id="submit">
-            <p id="feedback"></p>
+            <!-- <p id="feedback"></p> -->
 
           </form>
 
@@ -102,7 +102,7 @@
             });
         });
   </script> -->
-  <script type="text/javascript">
+<!--   <script type="text/javascript">
       $(document).ready(function() {
           $("#submit").click(function() {
               var jenis2 = $("input[type=radio]:checked").val();
@@ -111,6 +111,7 @@
               var lokasi2 = $("#lokasi1").val();
               var id_user2 = $("#id_user1").val();
               var kontak2 = $("#kontak1").val();
+              var gambar2 = $("#foto").val();
               if (jenis2 == '' || nama_barang2 == '' || spesifikasi2 == '' || lokasi2 == '') {
                   alert("Insertion Failed Some Fields are Blank....!!");
               } else {
@@ -123,11 +124,10 @@
                         spesifikasi: spesifikasi2,
                         lokasi: lokasi2,
                         id_user: id_user2,
-                        kontak: kontak2
+                        kontak: kontak2,
+                        gambar: gambar2
                       },
-                      success:function (data) {
-                          alert('success');
-                      },
+                      
                       error:function(data){
                           alert('fail');
                       }
@@ -135,7 +135,7 @@
               }
           });
       });
-  </script>
+  </script> -->
 
 
   

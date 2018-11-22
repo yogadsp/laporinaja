@@ -12,6 +12,8 @@ class C_kehilangan  extends CI_Controller {
 	}
 	function form_laporan()
 	{
+		$this->load->model('M_Keamanan');
+		$this->M_Keamanan->cek_login();
 		$this->load->view('V_lapor_kehilangan');
 	}
 
@@ -21,7 +23,7 @@ class C_kehilangan  extends CI_Controller {
 		
 		$query = 
 		$this->db->query
-		("SELECT tanggal, jenis, nama, spesifikasi, lokasi, kontak FROM barang WHERE id_kehilangan='$key'");
+		("SELECT tanggal, jenis, nama, spesifikasi, lokasi, kontak, gambar FROM barang WHERE id_kehilangan='$key'");
 		$row = $query->row();
 
 		if (isset($row))
@@ -31,6 +33,7 @@ class C_kehilangan  extends CI_Controller {
 	        $row->nama;
 	        $row->spesifikasi;
 	        $row->lokasi;
+	        $row->gambar;
 		}
 
 		$this->load->view('V_detail', $row);

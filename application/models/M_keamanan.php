@@ -8,13 +8,8 @@ class M_keamanan extends CI_model{
 		$level = $this->session->userdata('level');
 
 		if(empty($id_user)){
+			echo '<script>alert("Anda harus login dahulu!");</script>'; //tambahin sendiri kalo jquery
 			redirect('home');
-		} else {
-			if($level == "admin"){
-				redirect('admin');
-			} elseif ($level == "user") {
-				redirect('home');
-			}
 		}
 	}	
 }
