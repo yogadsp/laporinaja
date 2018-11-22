@@ -108,7 +108,7 @@
                           
                       },
                       error:function(pesan){
-                          alert('fail');
+                          alert('Login Terlebih Dahulu!');
                       }
                   });
               }
