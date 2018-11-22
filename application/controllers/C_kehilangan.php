@@ -22,7 +22,7 @@ class C_kehilangan  extends CI_Controller {
 		$key = $this->uri->segment(3);
 		$query = 
 		$this->db->query
-		("SELECT tanggal, jenis, nama, spesifikasi, lokasi, kontak FROM barang WHERE id_kehilangan='$key'");
+		("SELECT tanggal, jenis, nama, spesifikasi, lokasi, kontak, gambar FROM barang WHERE id_kehilangan='$key'");
 		$row = $query->row();
 
 		if (isset($row))
@@ -32,6 +32,7 @@ class C_kehilangan  extends CI_Controller {
 	        $row->nama;
 	        $row->spesifikasi;
 	        $row->lokasi;
+	        $row->gambar;
 		}
 
 		$this->load->view('V_detail', $row);

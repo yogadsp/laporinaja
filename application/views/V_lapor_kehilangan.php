@@ -32,7 +32,7 @@
         - id_admin di null dulu
         - tanggal_laporan
        ------------>
-          <form action="" method="post" id="frm_hilang" enctype="multipart/form-data">
+          <form action="<?php echo base_url('C_Laporan_Barang/simpan_laporan') ?>" method="post" id="frm_hilang" enctype="multipart/form-data">
             <h1 class="text-center form-header">Buat Laporan</h1>
             
             <div class="form-group row">
