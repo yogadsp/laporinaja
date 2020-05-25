@@ -6,4 +6,4 @@ Laporin Aja adalah sebuah aplikasi berbasis web yang berfungsi membantu civitas 
 ## Tools
 
 Framework : CodeIgniter, Bootstrap\
-Languange : PHP, MySQL, AJAX, JavaScript
+Languange : PHP, MySQL, JavaScript
