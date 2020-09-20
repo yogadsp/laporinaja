@@ -5,5 +5,9 @@ Laporin Aja adalah sebuah aplikasi berbasis web yang berfungsi membantu civitas 
 ---
 ## Tools
 
-Framework : CodeIgniter, Bootstrap\
+Framework : CodeIgniter, Bootstrap
 Languange : PHP, MySQL, JavaScript
+
+---
+#### Kontak
+Jika ada hal yang ditanyakan hubungi yogaseptana(at)gmail(dot)com dengan Subjek "Laporin Aja"
