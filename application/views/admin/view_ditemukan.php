@@ -14,7 +14,7 @@
 	<div class="isi">
 		<div class="row">
 
-		<div class="col-md-10">
+		<div class="col-md-12">
 			<div class="kotak">
 				<table class="table table-bordered table-striped" id="contoh">
 				  <thead class="thead-dark">

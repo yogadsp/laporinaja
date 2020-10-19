@@ -2,6 +2,24 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Admin extends CI_Controller {
+	// untuk mengecek apakah sudah login atau sesuai dengan perannya
+	public function __construct(){
+        parent::__construct();
+		$id_user = $this->session->userdata('id_user');
+		$pass = $this->session->userdata('pass');
+		$level = $this->session->userdata('level');
+		
+		if (!empty($id_user) && $level == 'admin') {
+		} else if($level == 'user'){
+			echo '<script>alert("Anda bukan admin!");
+			window.location.href="home";
+			</script>';
+		} else {
+			echo '<script>alert("Anda harus login dahulu!");
+			window.location.href="home";
+			</script>';
+		}
+	}
 
 	public function index()
 	{

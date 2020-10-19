@@ -9,11 +9,8 @@ class C_Lapor_Fasilitas  extends CI_Controller {
   }
   
   function simpan_laporan(){
-  $this->load->helper(array('form', 'url'));
+    $this->load->helper(array('form', 'url'));
       
-    
-    
-
     //config utk upload gambar
 
     $config['upload_path']    = './upload/fasilitas/'; //Upload path fasilitas
@@ -28,24 +25,24 @@ class C_Lapor_Fasilitas  extends CI_Controller {
 
       $img= $data1['upload_data']['file_name'];
 
-        	date_default_timezone_set('Asia/Jakarta');
-        $data['tanggal'] 		=   date("Y-m-d H:i:s");
-      	$data['nama']			= $this->input->post('nama');
-      	$data['keluhan']		= $this->input->post('keluhan');
-      	$data['lokasi']			= $this->input->post('lokasi');
-        $data['gambar']     = $img;
-      	$data['kontak']			= $this->input->post('kontak');
-      	$data['id_user']		= $this->input->post('id_user');
+      date_default_timezone_set('Asia/Jakarta');
+      $data['tanggal'] 		=   date("Y-m-d H:i:s");
+      $data['nama']			= $this->input->post('nama');
+      $data['keluhan']		= $this->input->post('keluhan');
+      $data['lokasi']			= $this->input->post('lokasi');
+      $data['gambar']     = $img;
+      $data['kontak']			= $this->input->post('kontak');
+      $data['id_user']		= $this->input->post('id_user');
 
-      		$this->load->model('User/M_laporan_fasilitas');
-      		$this->M_laporan_fasilitas->simpan_laporan($data);
+      $this->load->model('User/M_laporan_fasilitas');
+      $this->M_laporan_fasilitas->simpan_laporan($data);
 
-      		echo '<script>alert("You Have Successfully upload this Record!");</script>';
-                     redirect(base_url('C_lapor_fasilitas'), 'refresh');
+      echo '<script>alert("You Have Successfully upload this Record!");</script>';
+      redirect(base_url('C_lapor_fasilitas'), 'refresh');
 
-        }else{
-        echo '<script>alert("Failed upload this Record!");</script>';
-        redirect(base_url('C_lapor_fasilitas'), 'refresh');
+    }else{
+      echo '<script>alert("Failed upload this Record!");</script>';
+      redirect(base_url('C_lapor_fasilitas'), 'refresh');
     }
   }
 }

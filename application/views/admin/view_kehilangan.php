@@ -13,14 +13,13 @@
 <?php $this->load->view('admin/view_menu');?>
 	<div class="isi">
 		<div class="row">
-			<div class="col-md-10">
+			<div class="col-md-12">
 				<div class="kotak">
 					<table class="table table-hover" id="contoh">
 					  <thead class="thead-dark">
 					    <tr>
-					      <th scope="col">ID Barang</th>
+					      <th scope="col">No.</th>
 					      <th scope="col">Tanggal</th>
-					      <!-- <th scope="col">Jenis</th> -->
 					      <th scope="col">Nama Barang</th>
 					      <th scope="col">Spesifikasi</th>
 					      <th scope="col">Lokasi</th>
@@ -30,11 +29,14 @@
 					    </tr>
 					  </thead>
 					  <tbody>
-					  <?php foreach($data->result() as $row) { ?>
+					  <?php 
+					  	$no = 1; // insiasi untuk nomer urut
+
+					  	// mendapatkan data dari model
+					  	foreach($data->result() as $row) { ?>
 					  	<tr>
-					      <td><?php echo $row->id_kehilangan ?></td>
+					      <td><?php echo $no++ ?></td>
 					      <td><?php echo $row->tanggal ?></td>
-					      <!-- <td><?php echo $row->jenis ?></td> -->
 					      <td><?php echo $row->nama ?></td>
 					      <td><?php echo $row->spesifikasi ?></td>
 					      <td><?php echo $row->lokasi ?></td>
@@ -46,26 +48,21 @@
 					      	<center>
 				      		<?php 
 				      			$status = $row->status;
+				      			// cek apakah status sudah dipost atau belum
 				      			if($status == '1') {
 				      				echo '<span class="badge badge-success">Posted</span>';
 				      			} else if($status == '0') {
 				      				echo '<span class="badge badge-warning">Pending</span>';
 				      		?> 	
-					      		<input type="button" class="btn btn-info btn-sm ubah_status" value="Change" id="<?php echo $row->id_kehilangan; ?>">
+					      		<input type="button" class="btn btn-info btn-sm ubah_status" value="Ubah" id="<?php echo $row->id_kehilangan; ?>">
 				      		<?php 
 				      			} else {
 				      				echo '<span class="badge badge-warning">Pending</span>';
 				      		?>
-				      			<input type="button" class="btn btn-info btn-sm ubah_status" value="Change" id="<?php echo $row->id_kehilangan; ?>">
+				      			<input type="button" class="btn btn-info btn-sm ubah_status" value="Ubah" id="<?php echo $row->id_kehilangan; ?>">
 				      		<?php
 				      			}
 				      		?>
-				      					 
-					      	<!-- <a href="<?php echo base_url();?>admin/edit_kehilangan/<?php echo $row->id_kehilangan; ?>" style="font-size: 0.8em;">Edit</a> -->
-					      	
-
-
-					      	<!-- <span class="badge badge-danger">Pending</span> -->
 				      	</center>
 					      </td>
 					    </tr>

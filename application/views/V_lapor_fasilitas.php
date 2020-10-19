@@ -18,7 +18,7 @@
 	<?php $this->load->view('V_login'); ?>
 	<?php $this->load->view('V_header'); ?>
 
-	<div class="container isi">
+	<div class="container-fluid isi">
 		<div class="row">
 		    <div class="col-md-3">
 		    </div>

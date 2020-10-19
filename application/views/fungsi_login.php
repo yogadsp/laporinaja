@@ -29,11 +29,6 @@
                         urlskrg: urlskrg2
                       },
                       dataType: 'html',
-                      // data:new FormData(this),
-                      // processData:false,
-                      // contentType:false,
-                      // cache:false,
-                      // async:false,
                       success:function (pesan) {
                       	  if(pesan == 'user'){ //data diambil dari data yang di echo kan
                       	  	alert('success');
@@ -55,7 +50,6 @@
                       	  else if (pesan == 'salah_semua') {
                       	  	alert("Username atau Password Salah");
                       	  }
-                          
                       },
                       error:function(pesan){
                           alert('fail');

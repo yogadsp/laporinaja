@@ -12,23 +12,6 @@
 
 </head>
 <body>
-
-	<?php
-	//     $id_user = $this->session->userdata('id_user'); 
-	// if(empty($id_user)){
-	// 	$nama = "";
-	// 	$kontak = "";
-	// } else {
-	// 	$id_user = $this->session->userdata('id_user');
-	// 	$nama = $this->session->userdata('nama');
-	// 	$kontak = $this->session->userdata('kontak');
-	// }
-
-		$id_user = $this->session->userdata('id_user');
-		$nama = $this->session->userdata('nama');
-		$kontak = $this->session->userdata('kontak');
-	    
-  	?>
 	<?php $this->load->view('V_menu'); ?>
 	<?php $this->load->view('V_login'); ?>
 	<?php $this->load->view('V_header'); ?>
